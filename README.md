@@ -12,11 +12,11 @@ Meu método de aprendizado é muito simples, e aqui vai as etapas:
 2. Explicar como foi feita a resolução do meu exercício
 3. Pegar soluções de outras que eu achar as mais interessantes
 4. Explicar como essas soluções funcionam
-5. Uma secção de o que eu aprendi com tudo isso
+5. Uma seção de o que eu aprendi com tudo isso
 
 Muitos exercícios aqui no Leetcode têm um desafio a mais, que é geralmente tentar fazer algo em um _big o notation_ melhor. Embora eu vou tentar fazer isso também, eu infelizmente tenho QI negativos, então talvez eu não consiga fazer. Então a solução do exercício que será postada aqui será apenas aquelas que eu consegui fazer seguindo todas as restrições principais, ou seja, a não ser que fazer em um _big o notation_ específico seja uma delas, ela não necessariamente será feita.
 
-O motivo para eu fazer em Rust e não em outra linguagem é que a lógica é mais ou menos o seguinte, em Rust eu tenho que me preocupar com muita coisa a mais para eu conseguir compilar, coisas como: borrowship, mutabilidade, tipagem, etc. \
+O motivo para eu fazer em Rust e não em outra linguagem é que a lógica é mais ou menos o seguinte, em Rust eu tenho que me preocupar com muita coisa a mais para eu conseguir compilar, coisas como: ownership, mutabilidade, tipagem, etc. \
 \
 Logo, a ideia é que, se eu conseguir em Rust, eu provavelmente consigo em qualquer outra linguagem. Além que é a linguagem que atualmente eu tenho mais costume para programar no momento. Então tentar fazer em Python, por exemplo, mesmo sendo uma linguagem mais simples, por eu não saber muita coisa nela, iria ser pior que tentar em Rust já que eu teria que aprender Python ao mesmo tempo que eu tento resolver o problema.
 
@@ -138,7 +138,7 @@ fn main() {
 }
 ```
 
-Aqui o algoritmo se parece com o **MergeSort**, e a ideia por trás é simples: para casos bases onde temos uma lista vazia, o resultado é sempre a que não está vazia, bem fácil de entender isso.
+Aqui o algoritmo se parece com o **Merge Sort**, e a ideia por trás é simples: para casos bases onde temos uma lista vazia, o resultado é sempre a que não está vazia, bem fácil de entender isso.
 
 Para os outros casos, nós pegamos a cabeça de uma lista, ou seja, o primeiro valor, pegamos o menor e colocamos no início da lista, e então nós atualizamos a lista da qual nós "tiramos" um valor, e a comparação é feita novamente até chegarmos no caso base, onde nós já teríamos adicionado todos os valores, então podemos fugir do loop.
 
