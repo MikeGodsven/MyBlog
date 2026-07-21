@@ -16,7 +16,7 @@ pub fn remove_element<T: Eq + Copy>(nums: &mut Vec<T>, val: T) -> i32 {
 }
 ```
 
-**Obervação:** Aqui eu estou usando _generics_ e _traits_ como foi dito que eu faria no exercício **Merged Sorted Array**, o motivo é simples. Apenas praticar utilizar `traits` um pouco mais.
+**Observação:** Aqui eu estou usando _generics_ e _traits_ como foi dito que eu faria no exercício **Merged Sorted Array**, o motivo é simples. Apenas praticar utilizar `traits` um pouco mais.
 
 A função `retain` faz o que o `filter` faria, porem ele altera a função ao invés de criar um `iterator` para depois ser consumido em uma nova lista.
 
@@ -132,7 +132,7 @@ let mut nums = vec!['a','m','u','n','d','o','.','.'];
 remove_element(&mut nums, 'a');
 ```
 
-Ela tem a mesma complexidade em _Big O notation_ que a minha, tanto em _Runtime_ tanto _Memoria_. Sendo a única diferença que, aqui a lista é preservada, enquanto eu resolvi alterá-la. Outra vantagem também desse algorítmo é que ele mantém a ordem relativa dos valores na lista enquanto a minha altera. Como o enunciado permite isso, logo não tem problema, mas caso não permitisse, logo a minha solução seria inválida e essa seria a acertada.
+Ela tem a mesma complexidade em _Big O notation_ que a minha, tanto em _Runtime_ tanto _Memória_. Sendo a única diferença que, aqui a lista é preservada, enquanto eu resolvi alterá-la. Outra vantagem também desse algoritmo é que ele mantém a ordem relativa dos valores na lista enquanto a minha altera. Como o enunciado permite isso, logo não tem problema, mas caso não permitisse, logo a minha solução seria inválida e essa seria a acertada.
 
 Vamos fazer uma análise disso pois a lógica por trás é bem interessante.
 
